@@ -1,0 +1,14 @@
+.countdown {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vh;
+    background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+:export {
+    primary: $primary;
+    secondary: $secondary;
+    info: $info;
+    success: $success;
+    error: $error;
+    accent1: $accent1;
+    accent2: $accent2;
+    accent3: $accent3;
+    light: $light;
+    dark: $dark;
+    radius: $radius;
+}

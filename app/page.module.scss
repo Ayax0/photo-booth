@@ -1,0 +1,12 @@
+@import "_variables.scss";
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    video {
+        height: 100%;
+    }
+}

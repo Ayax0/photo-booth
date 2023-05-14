@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.gallery {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+
+    label {
+        font-size: 5vh;
+        font-weight: 300;
+    }
+
+    img {
+        height: 50vh;
+        border-radius: 2vh;
+    }
+}
+
+.action {
+    display: flex;
+    gap: 2rem;
+
+    a,
+    button {
+        background: transparent;
+        outline: none;
+        border: 1px solid $light;
+        text-decoration: none;
+        font-size: 5vh;
+        font-weight: 300;
+        color: $light;
+        padding: 8px 16px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.filmstrip {
+    --background: rgba(0, 0, 0, 0.35);
+    --size: 10px;
+    background-image: linear-gradient(to right, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to right, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, var(--background) var(--size), transparent var(--size)),
+        linear-gradient(to bottom, transparent var(--size), var(--background) var(--size));
+    background-size: calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size), calc(var(--size) * 2) var(--size),
+        calc(var(--size) * 2) var(--size), 100% calc(100% - var(--size) * 3);
+    background-repeat: repeat-x;
+    background-position: 0 var(--size), top left, 0 calc(100% - var(--size)), bottom left, 0 var(--size);
+    padding: calc(var(--size) * 3) calc(var(--size) * 2.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
